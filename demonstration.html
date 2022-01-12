@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body     
+
+{background-color: #5DAA68}
+
+{
+  font-family: Century gothic, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 55%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+img {
+  margin-bottom: -4px;
+}
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ .tb1 {border: 0px solid black; width: 100%; height: auto}
+        .titletb1 {height: 20%; text-align: center; width: 100%; font-size: 50px}
+        .td1 {border: 2px dashed darkgreen; text-align: center; width: 20%; font-family: "Century Gothic"; color: beige; border-radius: 10px; padding: 10px}
+        .tb2 {width: 100%; height: auto}
+        .td2 {border: 2px dashed darkgreen;text-align: justify; width: 50%; font-family: "Century Gothic"; color: beige; border-radius: 10px; padding: 60px}
+		.myDIV1 {width: 100%; text-align: left; border-radius: 10px; height: auto; vertical-align: top; letter-spacing: 2px; margin-left: 10px; margin-right: 10px;}
+        .myDIV2 {width: 100%; text-align: left; border-radius: 10px; height: auto; vertical-align: top; letter-spacing: 2px; margin-left: 10px; margin-right: 10px;}
+
+ $(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+});
+
+
+
+</style>
+<head>
+<title>
+Demonstration
+</title>
+</head>
+
+<body>
+
+<table class="tb1">
+            <tr class="titletb1"> <td colspan="5"><marquee style="color:white"> Product Demonstration </marquee></td></tr>
+	</table>
+	
+	<table class="tb2">
+	<tr>
+	<td class="td2">The "Waste-O" app has been selected as the issue's chosen project.
+	The group has chosen it because it is modern, simple to use, and can be available 
+	for many people. Waste and recycling apps can be a great tool for communicating with, 
+	educating, and even entertaining your customers or other constituents (Bothwell, 2020).
+	Essentially, the proposed "Waste-O" app has a design that can assist people in managing 
+	their waste better. Its main goal is to provide various facts, tips, and methods for promoting
+	proper waste management. Furthermore, it also aims to help prevent climate change and global 
+	warming and its possible long-term effects. Along with these, the target audience of the said 
+	project will be the residents of Barangay San Jose, Lipa City, Batangas since Improper Waste 
+	Management is the most prevalent problem that the residents could see.
+	</td>
+	<td class="td2">insert video presentation
+	</td>
+	</tr>
+	</table>
+&nbsp;&nbsp;
+<div class="row">
+  <div class="column">
+    <img src="s.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="m.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="a.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="r.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="t.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="sus.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="mes.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="ach.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <img src="rel.png" style="width:100%">
+    </div>
+    
+	<div class="mySlides">
+      <img src="tra.png" style="width:100%">
+    </div>
+	
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+    <div class="column">
+	
+      <img class="demo cursor" src="sus.png" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="mes.png" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="ach.png" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="rel.png" style="width:100%" onclick="currentSlide(4)">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="tra.png" style="width:100%" onclick="currentSlide(5)">
+    </div>
+</div>
+</div>
+
+<table class="tb2">
+	<tr>
+	<td class="td2">
+	<div div id="myDIV1" class="myDIV1">
+<a class="image-link" href="RESEARCH PROPOSAL DRAFT.pdf"><img style= width=50% src="research proposal draft.png"></a>
+	</div>
+	</td>
+	<td class="td2">
+	<div div id="myDIV2" class="myDIV2">
+ <a class="image-link" href="Capstone Project Plan_SECTION 13_GROUP A.pdf"><img style= width=50% src="capstone project plan.png"></a>
+	</td>
+	</div>
+	</tr>
+	
+	</table>
+
+
+
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>

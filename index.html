@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style> 
+            body{background-color: #5DAA68}
+            .tb1 {height: 100%; width: 100%; border: 0px solid silver; font-family: "Agency FB";font-size: 20px;}
+            td {width:20%; border:0px dashed silver; color: dimgrey; text-align: center; }
+            .NAVI {height: 10; text-align: center}
+            .credits {height: 10; text-align: right}
+            .HEAD {font-size: 60px; color: aliceblue; text-align: left; height: 17%}
+            .kai{background-color:darkseagreen; width: 18%; height: 100%; font-family: "Century Gothic"; font-size: 18; color: beige; border: 0px; border-radius: 15px;  transition-duration: 0.4s;}
+            .kai:hover { background-color: lavenderblush; color: dimgray;}
+            .main{width:20%; border:0px dashed silver; border-radius: 20px; color: saddlebrown; text-align: center}
+            iframe {border: 0px}
+            .image {border-radius: 20px}
+            .image:hover {background-color: darkseagreen;}
+            .image:active {transform: translateY(2px)}
+        </style>
+        <title>Waste-O</title>
+    </head>
+<body>
+     <table class="tb1">
+        <tr>
+            <td class="HEAD"><a href="index.html" target="_self"><img src="logo.png" height="100px" class="image"></a></td>
+        </tr>    
+         <tr class="NAVI">
+            <td>
+                <button type="button" class="kai" onclick="window.location.href='default-iframe.html';" target="window">HOME</button>
+                <button type="button" class="kai" onclick="window.location.href='Credits.html';" target="window">INTRO</button> 
+                <button type="button" class="kai" onclick="window.location.href='problem_solution.html';" target="window">PROBLEM AND SOLUTION</button> 
+                <button type="button" class="kai" onclick="window.location.href='demonstration.html';" target="window">DEMONSTRATION</button> 
+                <button type="button" class="kai" onclick="window.location.href='bmc.html';" target="window">BMC</button> 
+            </td>
+         </tr>
+         <tr>
+            <td><iframe name="window" height="100%" width="100%" src="default%20iframe.html" ></iframe></td>
+         </tr>
+         <tr>
+            <td class="credits"> <button type="button" class="kai" onclick="window.location.href='Credits.html';" target="window">CREDITS</button> </td>
+         </tr>
+        </table>
+</body>
+</html>

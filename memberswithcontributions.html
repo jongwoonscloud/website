@@ -1,0 +1,88 @@
+<html>
+ <style>
+        body{background-color: #5DAA68}
+        .kai{background-color:darkseagreen; width: 40%; height: 20px; font-family: "Century Gothic"; font-size: 13px; color: beige; border: 0px; border-radius: 15px;  transition-duration: 0.4s;}
+        .kai:hover { background-color: lavenderblush; color: dimgray;}
+        .tb1 {border: 0px solid black; width: 100%; height: auto; font-size: 18px}
+        .titletb1 {height: 20%; text-align: center; width: 100%; font-size: 50px}
+        td {border: 2px solid darkgreen; text-align: center; width: 20%; font-family: "Century Gothic"; color: beige; border-radius: 10px;}
+        .tbtext {text-align: center; vertical-align: baseline;}
+        .tcenter {border: 2px dashed darkgreen; text-align: center; width: 20%; font-family: "Century Gothic"; color: beige; border-radius: 10px;}
+        .titletb1 {height: 20%; text-align: center; width: 100%; font-size: 50px}
+        td {border: 2px dashed darkgreen; text-align: center; width: 20%; font-family: "Century Gothic"; color: beige; border-radius: 10px;}
+        .myDIV1 {width: 100%; text-align: left; border-radius: 10px; height: auto; vertical-align: top; letter-spacing: 2px; margin-left: 10px; margin-right: 10px;}
+        .myDIV2 {width: 100%; text-align: left; border-radius: 10px; height: auto; vertical-align: top; letter-spacing: 2px; margin-left: 10px; margin-right: 10px;}
+        .myDIV3 {width: 100%; text-align: left; border-radius: 10px; height: auto; vertical-align: top; letter-spacing: 2px; margin-left: 10px; margin-right: 10px;}
+    </style>
+    
+    <body>
+        <table class="tb1">
+            <tr class="titletb1"><td colspan="3"><marquee> CONTRIBUTORS</marquee></td>
+            </tr>
+                <td class="tbtext" name="techa"><h2><center> Technology Application </center></h2>
+                    <div id="myDIV1" class="myDIV1"> 
+								<p>Metrillo, Brian David</p>
+                                <p>Fanoga, Rex Reilley Nathaniel</p>
+                                <p>Mendoza, Jovan Emmanuelle</p>
+								<p>Landicho, Nicholas Riley</p>
+                    </div>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    <button type="button" class="kai" onclick="technologyapplication()" target="techa">HIDE</button>
+                </td>
+                <td class="tbtext" id="busmc"><h2> <center> Business Model Canvas </center> </h2>
+                    <div id="myDIV2" class="myDIV2"> 
+						
+                                <p>Banta, Nino Robi</p>
+								<p>Pasion, Mary Ann</p>
+								<p>Umali, Faith Marienne</p>
+								<p>Pintor, Joseph Edward</p>
+					
+                    </div>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="kai" onclick="businessmodelcanvas()" target="busmc">HIDE </button>   
+                </td>
+                <td class="tbtext" id="webp">
+                    <h2><center> Webpage </center></h2>
+                    <div id="myDIV3" class="myDIV3"> 
+								<p>Cuevas, Andrea Joice</p>
+								<p>Cabuco, Mark Mikael</p>
+                                <p>Pasion, Mary Ann </p>
+								<p>Banta, Nino Robi<p>
+								<p>Villamil, James Ian</p>
+								<p>Guico, Nathaniel</p>
+								<p>Umali, Faith Marienne</p>
+								<p>Arevalo, Neil Angelo</p>
+								<p>Bait, Jeryk Dwight</p>
+                       
+						
+                    </div>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="kai" onclick="webpage()" target="webp">HIDE </button>  
+                </td>
+                 </tr>
+        </table>
+        
+    <script>
+    function technologyapplication() {
+        var x = document.getElementById("myDIV1");
+            if (x.style.display === "none") 
+                {x.style.display = "block";} 
+            else {x.style.display = "none";}
+                            }
+    function businessmodelcanvas() {
+        var x = document.getElementById("myDIV2");
+            if (x.style.display === "none") 
+                {x.style.display = "block";} 
+            else {x.style.display = "none";}
+                            }
+     function webpage() {
+        var x = document.getElementById("myDIV3");
+            if (x.style.display === "none") 
+                {x.style.display = "block";} 
+            else {x.style.display = "none";}
+                            }
+  
+    </script>
+    </body>
+</html>

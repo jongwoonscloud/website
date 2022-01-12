@@ -1,0 +1,332 @@
+<html>
+    <style>
+        body{background-color: #5DAA68}
+        .kai{background-color:darkseagreen; width: 40%; height: 20px; font-family: "Century Gothic"; font-size: 13px; color: beige; border: 0px; border-radius: 15px;  transition-duration: 0.4s;}
+        .kai:hover { background-color: lavenderblush; color: dimgray;}
+        .kai2{background-color:darkseagreen; width: 10%; height: 20px; font-family: "Century Gothic"; font-size: 10; color: beige; border: 0px; border-radius: 15px;  transition-duration: 0.4s;}
+        .kai2:hover { background-color: lavenderblush; color: dimgray;}
+        .kai3{background-color:darkseagreen; width: 10%; height: 20px; font-family: "Century Gothic"; font-size: 10; color: beige; border: 0px; border-radius: 15px;  transition-duration: 0.4s;}
+        .kai3:hover { background-color: lavenderblush; color: dimgray;}
+        .btmbtn {height: 10%; text-align: right}
+        .tb1 {border: 0px solid black; width: 100%; height: auto; font-size: 18px}
+        .titletb1 {height: 20%; text-align: center; width: 100%; font-size: 50px}
+        td {border: 2px dashed darkgreen; text-align: center; width: 20%; font-family: "Century Gothic"; color: beige; border-radius: 10px;}
+        .tbtext {text-align: right; vertical-align: baseline;}
+        .myDIV1 {width: 100%; text-align: left; border-radius: 10px; height: auto; vertical-align: top; letter-spacing: 2px; margin-left: 5px; margin-right: 5px;}
+        .myDIV2 {width: 100%; text-align: left; border-radius: 10px; height: auto; vertical-align: top; letter-spacing: 2px; margin-left: 5px; margin-right: 5px;}
+        .myDIV3 {width: 100%; text-align: left; border-radius: 10px; height: auto; vertical-align: top; letter-spacing: 2px; margin-left: 5px; margin-right: 5px;}
+        .myDIV4 {width: 100%; text-align: left; border-radius: 10px; height: auto; vertical-align: top; letter-spacing: 2px; margin-left: 5px; margin-right: 5px;}
+        .myDIV5 {width: 100%; text-align: left; border-radius: 10px; height: auto; vertical-align: top; letter-spacing: 2px; margin-left: 5px; margin-right: 5px;}
+        .myDIV6 {width: 100%; text-align: left; border-radius: 10px; height: auto; vertical-align: top; letter-spacing: 2px; margin-left: 5px; margin-right: 5px;}
+        .myDIV7 {width: 100%; text-align: left; border-radius: 10px; height: auto; vertical-align: top; letter-spacing: 2px; margin-left: 5px; margin-right: 5px;}
+        .myDIV8 {width: 100%; text-align: left; border-radius: 10px; height: auto; vertical-align: top; letter-spacing: 2px; margin-left: 5px; margin-right: 5px;; padding-left: 0px}
+        .myDIV9 {width: 100%; text-align: left; border-radius: 10px; height: auto; vertical-align: top; letter-spacing: 2px; margin-left: 5px; margin-right: 5px;}
+    </style>
+    
+    <body>
+        <table class="tb1">
+            <tr class="titletb1"> <td colspan="5"><marquee> Business Model Canvas </marquee></td></tr>
+            <tr>
+                <td class="tbtext" name="keyp"> <h2><center> Key <br> Partners </center></h2>
+                    <div id="myDIV1" class="myDIV1"> 
+                        <h3>Barangay Officials</h3>
+                        <h3>Funding</h3>
+							<li>Angel Investors</li>
+							<li>Donors</li>
+                        <h3>App Creation</h3>
+							<li>Glide</li>
+                        <h3>Promotional Platforrm</h3>
+							<li>Facebook</li>
+                        <h3>Distribution Platforms</h3>
+							<li>Google Play Store</li>
+							<li>Google Play Console</li>
+							<li>Apple App Store</li>
+							<li>Apple Developer Program</li>
+							<li>Huawei App Gallery</li>
+							<li>Huawei Developer</li>
+                    </div>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    <button type="button" class="kai" onclick="keypartners()" target="keyp">HIDE</button>
+                </td>
+                <td class="tbtext" id="dchannel"> <h2><center> Distribution Channels </center> </h2>
+                    <div id="myDIV2" class="myDIV2"> 
+						<h3>App Stores</h3>
+							<li>includes easier access and installation for users</li>
+							<li>convenient monitoring for the developers</li>
+							<li>convenient platform for new announcements about the app’s new versions and development</li>
+							<li>faster review and response from help support service</li>
+                        <ul><li><b>Google Play Store</b></li>
+								<ul><li>for most residents using android phones</li></ul>
+							<li><b>Apple App Store</b></li>
+								<ul><li>convenient for residents using apple devices </li></ul>
+                        <li><b>Huawei App &nbsp; Gallery</b></li>
+								<ul><li>For Huawei device users</li></ul>
+                        </ul>
+                    </div>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="kai" onclick="distributionchannels()" target="dchannel">HIDE </button>   
+                </td>
+                <td rowspan="2" class="tbtext" id="kact"> <h2><center> Key Activities </center> </h2>
+                    <div id="myDIV3" class="myDIV3"> 
+                        <h3>Problem Solving</h3>
+							<li>Assess the overall quality and usability</li>
+							<li>Have a professional evaluation of the application</li>
+							<li>Have a trial week</li>
+							<li>Identify known and observed anomalies</li>
+							<li>Fix known anomalies</li>
+							<li>Create a feedback and concerns feature</li>
+							<li>Organize help support service</li>
+						
+                        <h3>App Creation</h3>
+							<li>Data gathering for content through the internet</li>
+							<li>Gathering prior announcements from the officials</li>
+							<li>Prototyping through Glide</li>
+							<li>App Testing</li>
+							<li>Fixing errors and bugs</li>
+						
+						<h3>Promotion</h3>
+							<li>Introducing the app through barangay announcement</li>
+							<li>Creating a personal website and Facebook page for the company</li>
+							<li>Sharing the app and company information through Facebook and website</li>
+							<li>Updating the &nbsp;website and facebook page for new app developments and changes</li>
+				
+                        <h3>Distribution</h3>
+							<li>Distribution to app stores</li>
+							<li>Cooperation with companies (Google, Apple, Huawei)</li>
+							<li>App release</li>
+							<li>App installation</li>
+							<li>Accept feedbacks</li>
+							<li>Update app versions  </li>
+						
+                    </div>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="kai" onclick="keyactivities()" target="kact">HIDE </button>  
+                </td>
+                <td class="tbtext" id="krec"> <h2><center> Key Resources </center> </h2>
+                    <div id="myDIV4" class="myDIV4">
+                        <h3>Physical Resources:</h3>
+							<li>Laptop</li>
+							<li>Wifi</li>
+					
+                        <h3>Intellectual Resources:</h3>
+							<li>Tech-App Name “Waste-O”</li>
+							<li>Trademark </li>
+							<li>Copyright and patents</li>
+							<li>Partnerships with Investors</li>
+							<li>Partnerships with Brands</li>
+							<li>Innovativeness</li>
+					
+                        <h3>Human Resources:</h3>
+							<li>App Developers</li>
+							<li>Advertising Partners (Brand Deals)</li>
+							<li>Advertising Groups</li>
+							<li>Investors</li>
+							<li>Donors</li>
+							<li>App and Website Designer</li>
+							<li>Barangay Officials </li>
+							<li>App Manager</li>
+							<li>Problem Solving Groups</li>
+					
+                        <h3>Financial Resources:</h3>
+							<li>Money assets</li>
+							<li>Funds</li>
+							<li>Utility Expense</li>
+							<li>Advertising and Marketing Expense</li>
+							<li>Equipment Loan</li>
+					
+                    </div>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="kai" onclick="keyresources()" target="krec">HIDE </button> 
+                </td>
+                <td class="tbtext" id="crelationships"> <h2><center> Customer Relationships</center></h2>
+                    <div id="myDIV5" class="myDIV5"> 
+						<br>
+						<li>Long term</li>
+                        <li>Self Service </li>
+                        <li>Customer Centricity</li>
+                        <li>Mutual Trust</li>
+                        <li>Community Relation </li>
+                        <li>Co-Creation</li>
+                        <li>Reinventing Strategies</li>
+                        <li>Dedicated Personal Assistance</li>
+                        <li>Active help center</li>
+                    </div>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    <button type="button" class="kai" onclick="customerrelationships()" target="crelationships">HIDE </button> 
+                </td>
+            </tr>
+            <tr> 
+                <td class="tbtext" id="vproposition"> <h2><center> Value Proposition </center> </h2>
+                    <div id="myDIV6" class="myDIV6"> 
+						<br>
+						<li>Innovative</li>
+                        <li>Informative</li>
+                        <li>Accessible</li>
+                        <li>Eco-friendly</li>
+                        <li>Family-friendly</li>
+                        <li>Universal</li>
+                        <li>Supports six UN SDGs:<br>
+							SDG#3 - Good Health and Well Being<br>
+							SDG#6 - Clean Water and Sanitation<br>
+							SDG#8 - Sustainable Cities and Communities<br>
+							SDG#13 - Climate Action<br>
+							SDG#14 - Life Below Water<br>
+							SDG#15 - Life on Land<br>
+						</li>
+                    </div>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    <button type="button" class="kai" onclick="valueproposition()" target="vproposition">HIDE </button> 
+                </td>
+                <td class="tbtext" id="csegments"> <h2><center>Customer Segments </center> </h2>
+                    <div id="myDIV7" class="myDIV7"> 
+                        <h3>Residents of San Jose, lipa City will have:</h3>
+							<li>On-hand available study materials on waste and waste management</li>
+							<li>Readily-available waste management tutorials</li>
+							<li>Updated announcements</li>
+							<li>Easy communication platform to raise concerns</li>
+							<li>Regular waste collection</li>
+							<li>Improved waste management system</li>
+							<li>Better living environment</li>
+							<br>
+                        <h3>Barangay Officials &nbsp;of San Jose, Lipa City</h3>
+							<li>Convenient platform for regular announcements</li>
+							<li>Easy mass communication</li>
+							<li>Less expenses on mass communication media paraphernalias</li>
+							<li>Budget can be spent on better service and needs of the residents and barangay</li>
+							<br>
+                    </div>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    <button type="button" class="kai" onclick="customersegments()" target="csegments">HIDE </button> 
+                </td>
+                <td class="tbtext" id="rstreams"> <h2> <center>Revenue Streams</center> </h2>
+                    <div id="myDIV8" class="myDIV8">
+                        <h3>App Monetization</h3>
+							<ul><li>In-app Advertisements </li>
+								<ul>
+									<li>Banner ads</li>
+									<li>Native ads</li>
+									<li>In-app Video ads</li>
+                                </ul>
+                                    <li>Method:</li>
+								    <li>Cost per View(CPV)</li>
+								    <li>CPV=advertising cost/ video views </li>
+								    <li>Sample Computation</li>
+							</ul>
+
+								<ul>CPV = percentage based on daily cost <br>
+								10 times: 7% of 200 = 14.00  / ad release <br>
+								20 times: 6.8% of 200 = 13.60   / ad release <br>
+								30 times: 6.5% of 200 = 13.00   /  ad release <br>
+								<br>
+								Ads Pricing <br>
+								10 ads per day = 140.00 <br>
+								20 ads per day = 272.00 <br>
+								30 ads and up per day = 390.00 <br>
+                                </ul>
+							
+                        <h3>Freemium upsell</h3>
+								<li>Additional features upon upgrade</li>
+								<li>Removes ads</li>
+								<li>Priced at one-time payment 29.00PHP/in-app account</li>
+                    </div>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    <button type="button" class="kai" onclick="revenuestreams()" target="rstreams">HIDE </button> 
+                </td>
+                <td class="tbtext" id="cstructure"> <h2><center>Cost Structure</center></h2>
+                    <div id="myDIV9" class="myDIV9"> 
+                        <h3>Production</h3>
+							<li>Developer Program: 1000.00PHP/month</li>
+							<li>Laptop: 80,000.00PHP/unit</li>
+							<br>
+                            <h3>Transportation</h3>
+							<li>Gas: 45.00PHP/liter</li>
+							<li>Fare: 10.00-300.00/ride</li>
+							<br>
+                            <h3>Utilities</h3>
+							<li>Wifi: 1500.00PHP/month</li>
+							<br>
+                            <h3>Advertising</h3>
+							<li>Facebook Advertisement:  800.00 - 1200.00PHP/month</li>
+							<li>Website: 400.00PHP/month</li>
+							<br>
+                            <h3>Distribution</h3>
+							<li>Google Play Store: 1300.00  one-time developer fee</li>
+							<li>Apple App Store: 500.00/month</li>
+							<br>
+                    </div>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    <button type="button" class="kai" onclick="coststructure()" target="cstructure">HIDE </button> 
+                </td>
+            </tr>
+            <tr> 
+                    <td colspan="5" class="btmbtn">
+                        <button type="button" class="kai2" onclick="window.location.href='demonstration.html'" target="_self">PREVIOUS</button>
+                        <button type="button" class="kai3" onclick="window.location.href='Credits.html'" target="_self">NEXT </button>
+                    </td>
+            </tr>
+        </table>
+        
+    <script>
+    function keypartners() {
+        var x = document.getElementById("myDIV1");
+            if (x.style.display === "none") 
+                {x.style.display = "block";} 
+            else {x.style.display = "none";}
+                            }
+    function distributionchannels() {
+        var x = document.getElementById("myDIV2");
+            if (x.style.display === "none") 
+                {x.style.display = "block";} 
+            else {x.style.display = "none";}
+                            }
+     function keyactivities() {
+        var x = document.getElementById("myDIV3");
+            if (x.style.display === "none") 
+                {x.style.display = "block";} 
+            else {x.style.display = "none";}
+                            }
+    function keyresources() {
+        var x = document.getElementById("myDIV4");
+            if (x.style.display === "none") 
+                {x.style.display = "block";} 
+            else {x.style.display = "none";}
+                            }
+    function customerrelationships() {
+        var x = document.getElementById("myDIV5");
+            if (x.style.display === "none") 
+                {x.style.display = "block";} 
+            else {x.style.display = "none";}
+                            }
+    function valueproposition() {
+        var x = document.getElementById("myDIV6");
+            if (x.style.display === "none") 
+                {x.style.display = "block";} 
+            else {x.style.display = "none";}
+                            }
+    function customersegments() {
+        var x = document.getElementById("myDIV7");
+            if (x.style.display === "none") 
+                {x.style.display = "block";} 
+            else {x.style.display = "none";}
+                            }
+    function revenuestreams() {
+        var x = document.getElementById("myDIV8");
+            if (x.style.display === "none") 
+                {x.style.display = "block";} 
+            else {x.style.display = "none";}
+                            }
+    function coststructure() {
+        var x = document.getElementById("myDIV9");
+            if (x.style.display === "none") 
+                {x.style.display = "block";} 
+            else {x.style.display = "none";}
+                            }
+    </script>
+    </body>
+</html>
